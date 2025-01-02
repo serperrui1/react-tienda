@@ -11,7 +11,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <FiltersProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter  basename="/react-tienda"> 
             <Cart />
           <header>
             <Link to={"/"} style={{ textDecoration: "none", color: "inherit" }}>

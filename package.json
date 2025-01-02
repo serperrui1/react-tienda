@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://serperrui1.github.io/tienda-react",
+  "homepage": "https://serperrui1.github.io/react-tienda",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
