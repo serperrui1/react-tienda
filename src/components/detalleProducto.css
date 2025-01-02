@@ -1,0 +1,38 @@
+.imagen-detalle {
+    object-fit: contain;
+    min-width: 300px;
+    width: 100%;
+    height: 100%;
+}
+.imagen-container{
+    height: 80vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle-producto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    padding-top: 7rem;
+}
+.info-container{
+    padding: 1rem;
+}
+#unidades{
+    margin-inline: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    width: 40px;
+}
+.back{
+    color: var(--primary);
+    padding-top: 4.2rem;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

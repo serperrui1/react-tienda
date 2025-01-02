@@ -1,0 +1,32 @@
+.select{
+    padding: 0.2rem 0.2rem;   
+    color: var(--secundary);
+}
+.tooltip {
+    position: fixed;
+    transform: translateX(-50%);
+    pointer-events: none;
+    background-color: #333;
+    color: var(--background-color);
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.filtro-content{
+    padding-top: 0.9rem;
+}
+input{
+    color: var(--secundary);
+    cursor: pointer;
+}
+.range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50; /* Change this color to your desired thumb color */
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  

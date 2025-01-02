@@ -1,0 +1,63 @@
+.productos{
+  margin: 0px;
+  margin-top: 2rem;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+  gap: 1rem;
+  background-color: var(--background-div);
+  
+}
+
+.nombre-tienda{
+  font-size: 2rem;
+  margin: 1.2rem;
+  margin-inline: 0px;
+  text-align: center;
+}
+
+.productos-container{
+  padding-top: 5.9rem;
+}
+.filtro{
+  position: fixed;
+  top: 4.7rem;
+  right: 0;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  background-color:var(--background-div); 
+  text-align: center;
+  padding-bottom: 0.5rem;
+
+  
+}
+
+.filtro-content {
+  display: inline-block; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  text-align: right; 
+  padding-top: 5px;
+ 
+ }
+ 
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  animation: l1 1s linear infinite alternate;
+}
+.loader:before {
+  content:"Cargando datos de la API..."
+}
+@keyframes l1 {to{opacity: 0}}

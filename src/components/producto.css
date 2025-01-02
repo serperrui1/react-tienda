@@ -1,0 +1,43 @@
+.producto{
+    margin: 0px auto;
+    width: calc(100% - 2rem);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+}
+
+
+.producto img{
+    max-width: 250px;
+    max-height: 250px;
+    margin: 0px auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border-radius: 10px;
+}
+
+.producto-precio{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+button{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secundary);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    color: var(--background-color);
+}
+button:hover{
+    background-color: var(--primary);
+}

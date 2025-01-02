@@ -1,0 +1,80 @@
+.cart-button {
+    position: fixed;
+    
+    top: 0;
+    right: 0;
+    padding: 22px;
+    width: 32px;
+    z-index: 9999;
+    cursor: pointer;
+}
+.items-cart{
+    color: var(--background-color);
+    position: absolute;
+    bottom: 24px;
+    left: 13px;
+
+}
+
+.cart {
+    position: fixed;
+    width: 320px;
+    top: 0;
+    height: calc(100vh - 80px);
+    right: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    z-index: 100;
+    transform: translateX(100%); /* Comienza fuera de la pantalla */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: var(--third) white;
+    
+}
+
+.cart img {
+    aspect-ratio: 16/9;
+    width: 100%;
+    object-fit: contain;
+}
+
+.cart ul {
+    list-style: none;
+    text-align: center;
+    gap: 1rem;
+    padding: 0; /* Asegúrate de que no haya relleno extra */
+    padding-inline: 10px;
+    margin: 0; /* Asegúrate de que no haya margen extra */
+}
+
+footer {
+    padding: 10px;
+}
+
+.cart button {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-inline: 5px;
+}
+
+/* Estilos para manejar la animación al activar el checkbox */
+.cart-button ~ input:checked ~ .cart {
+    display: block;
+    transform: translateX(0); /* Comienza fuera de la pantalla */
+    transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+.close-cart{
+    list-style: none;
+    color: var(--secundary);
+    background-color: transparent;
+}
+.close-cart:hover{
+    background-color: var(--background-color);
+}
+
+.cart-item{
+    color: var(--primary);
+}
