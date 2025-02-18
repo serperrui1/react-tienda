@@ -56,18 +56,15 @@ function App() {
 
   return (
     <>
-
       <div className="filtro">
         <div className="filtro-content">
-
-            <Filtro />
+          <Filtro />
         </div>
-          </div>
+      </div>
       {productos.length === 0 || cargando ? (
         <div className="loader"></div>
       ) : (
         <section className="productos-container">
-
           <ul className="productos">
             {filteredProducts.map((producto) => (
               <Producto key={producto.id} producto={producto} />

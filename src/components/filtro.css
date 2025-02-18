@@ -1,7 +1,37 @@
-.select{
-    padding: 0.2rem 0.2rem;   
-    color: var(--secundary);
+.select {
+    padding: 0.5rem 1rem;   
+    color: var(--primary);
+    font-size: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    appearance: none; /* Oculta el estilo nativo del sistema */
+    position: relative;
 }
+@media (max-width: 450px) {
+ .select{
+    padding: 0.2rem 0.3rem;   
+    color: var(--primary);
+    font-size: 0.8rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    appearance: none; /* Oculta el estilo nativo del sistema */
+    position: relative;
+ }
+    
+}
+.select option:focus{
+    background-color: var(--primary);
+}
+
+
 .tooltip {
     position: fixed;
     transform: translateX(-50%);
